@@ -1,0 +1,12 @@
+gorcery = input()
+categories = gorcery.split(";")
+category_1 = categories[0].split(",")
+category_2 = categories[1].split(",")
+category_3 = categories[2].split(",")
+category_4 = categories[3].split(",")
+category_1_total = int(category_1[1]) + (int(category_1[2])/100) * int(category_1[1])
+category_2_total = int(category_2[1]) + (int(category_2[2])/100) * int(category_2[1])
+category_3_total = int(category_3[1]) + (int(category_3[2])/100) * int(category_3[1])
+category_4_total = int(category_4[1]) + (int(category_4[2])/100) * int(category_4[1])
+total_bill = category_1_total + category_2_total + category_3_total + category_4_total
+print("Final bill:", total_bill)
